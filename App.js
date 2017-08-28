@@ -1,15 +1,19 @@
+// Import a library to help create a component
 import React from 'react';
 import { View } from 'react-native';
-import Header from './src/components/Header';
+import Header from './src/components/header';
 import AlbumList from './src/components/AlbumList';
-
+//Create a component
 export default class App extends React.Component {
-  render() {
-    return (
-      <View>
-        <Header HeaderText={'Albums'} />
-        <AlbumList />
-      </View> 
-    );
-  }
-}
+    render() {
+        return (
+          <View style={{ flex: 1 }}>
+                <Header headerText={'Albums'} />
+                <AlbumList />
+            </View>
+        );
+    }
+}   
+
+//Render it to the device (this is modified from the 
+// tutorial because App Registry isn't being used)
